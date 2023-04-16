@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.Conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 100vw;
+  height: 100hv;
+
+  background-color: rgb(71,74,81);
+}
+
+.Navbar{
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  width: 10%;
+  background-color: #333333;
+  height: 100hv;   
+}
+
+.NavbarItem{
+  display: block;
+  padding: 8px 16px;
+  margin: 8px 12px;
+  border: none; 
+  outline: none;
+  text-align:center;
+}
+.NavbarItem svg{
+  fill: #cccccc;
+}
+.NavbarItem svg :hover{
+  fill: #3adaeb;
+}
+
+.ItemCatalog{
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+  height: 100vh; 
+  background-color: #252526;
+}
+
+.WorkSpace{
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+  height: 100vh; 
+  background-color: #1e1e1e;
+}
+
+
+
+
+
