@@ -1,5 +1,8 @@
 import styles from './Home.module.css';
 import { HomeSwgSelector } from './HomeSvgSelector.tsx';
+import  { FullData }  from './ItemExporter/FullData.js'
+import ItemExporter from './ItemExporter/ItemExporter.js'
+
 
 const Home = () => (
 
@@ -21,10 +24,14 @@ const Home = () => (
     </div>
 
     <div className = {styles.ItemCatalog}> 
-      <h>3</h>
-      <p>4</p>
-      <p>5</p>
-      <p>6</p>
+      <p>Item Catalog</p>
+      
+      {FullData.length ? 
+      (FullData.map(data => (
+        <ItemExporter key={data.id} data={data}/>
+      )))
+      : <div>Data Empty</div>
+      }
     </div>
 
     <div className = {styles.WorkSpace}> 
